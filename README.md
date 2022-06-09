@@ -9,3 +9,7 @@ Note you will need to create a `.env` file (you can use the `sample.env` and giv
 DATACATCHER_DATA_DIR=./data
 HOST_DATA_DIR=/Volumes/datacatcher/data
 ```
+The `DATACATCHER_DATA_DIR` is where the service writes incoming data requests on disk. If you're running locally, as source, this is your local path.
+
+The `HOST_DATA_DIR` is used in the docker configuration to specify where the container will look for the data directory to mount it properly. If you're running in a container, this is where the docker host process can find the data files.
+
