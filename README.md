@@ -14,3 +14,8 @@ The `DATACATCHER_DATA_DIR` is where the service writes incoming data requests on
 
 The `HOST_DATA_DIR` is used in the docker configuration to specify where the container will look for the data directory to mount it properly. If you're running in a container, this is where the docker host process can find the data files.
 
+## Usage
+Example:
+```
+response = requests.post(f"{url}/catch/test", data='[{"test":"test"}]')
+```
